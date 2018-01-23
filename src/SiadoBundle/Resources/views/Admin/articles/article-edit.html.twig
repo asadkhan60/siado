@@ -1,0 +1,82 @@
+{% extends "base-admin.html.twig" %}
+
+{% block body %}
+    <div class="content-wrapper article-content">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{{ path('admin_article_liste') }}">Retour</a>
+                </li>
+                <li class="breadcrumb-item">
+                    Editer un article
+                </li>
+            </ol>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form_article">
+                        {{ form_start(form, {'attr': {'class': 'form_article_edit'}}) }}                                 <!-- OU {{ form_start(form, {'action': path('admin_article_add'), 'method': 'POST'}) }}-->
+                        <div class="article_titre">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    {{ form_label(form.titre, null, {'label_attr': {'class': 'form_article_label_titre'}}) }}
+                                </div>
+                                <div class="col-lg-9">
+                                    {{ form_widget(form.titre, {'attr': {'class': 'form_article_input_titre'}}) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article_description">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    {{ form_label(form.description, null, {'label_attr': {'class': 'form_article_label_description'}}) }}
+                                </div>
+                                <div class="col-lg-9">
+                                    {{ form_widget(form.description, {'attr': {'class': 'form_article_input_description'}}) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article_file">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    {{ form_label(form.image.file, null, {'label_attr': {'class': 'form_article_label_file'}}) }}
+                                </div>
+                                <div class="col-lg-9">
+                                    {{ form_widget(form.image.file, {'attr': {'class': 'form_article_input_file'}}) }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+
+                                </div>
+                                <div class="col-lg-9">
+                                    <img class="current-edit-image" src="{{ asset(articles_directory ~ current_image) }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article_button">
+                            <div class="row">
+                                <div class="col-lg-3">
+
+                                </div>
+                                <div class="col-lg-9">
+                                    {{ form_widget(form.editer, {'attr': {'class': 'btn btn-info link-cursor form_article_button'}}) }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
+
+                        {{ form_errors(form) }}
+                        {{ form_errors(form.titre) }}
+                        {{ form_errors(form.description) }}
+                        {{ form_errors(form.image.file) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        {% block title %}Authentification{% endblock %}
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ asset('template/form/form.css') }}" rel="stylesheet" type="text/css"/>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+
+{% block body %}{% endblock %}
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>

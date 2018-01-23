@@ -1,0 +1,15 @@
+SiadoBundle\Entity\Image:
+    type: entity
+    table: null
+    repositoryClass: SiadoBundle\Repository\ImageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        file:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

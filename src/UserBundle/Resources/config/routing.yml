@@ -1,0 +1,8 @@
+fos_user_security:
+    resource: routing/security.yml
+
+fos_user_resetting:
+    resource: routing/resetting.yml
+
+fos_user_change_password:
+    resource: routing/change_password.yml

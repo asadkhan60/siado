@@ -1,0 +1,46 @@
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
+
+security:
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+    access_control:
+        - { path: ^/connexion$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/reinit, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/, role: ROLE_ADMIN }
+        - { path: ^/change_mdp, role: ROLE_ADMIN }
+
+    encoders:
+        FOS\UserBundle\Model\UserInterface: bcrypt
+
+    providers:
+        fos_userbundle:
+            id: fos_user.user_provider.username
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt))/
+            security: false
+
+        main:
+            pattern: ^/
+            form_login:
+                provider: fos_userbundle
+                csrf_token_generator: security.csrf.token_manager
+                login_path: fos_user_security_login
+                use_forward: false
+                check_path: fos_user_security_check
+                failure_path: null
+                default_target_path: /admin
+                remember_me: true
+            remember_me:
+                secret:      '%secret%'
+                lifetime: 300000000
+                path:     /
+                domain:   ~
+            logout:
+                path:     fos_user_security_logout
+                target:   /connexion
+            anonymous:    true

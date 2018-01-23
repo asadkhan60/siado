@@ -1,0 +1,44 @@
+.contact-form{
+    float: left;
+    width: 60%;
+}
+
+.contact-form-nom, .contact-form-email, .contact-form-tel, .contact-form-objet, .contact-form-msg{
+    width: 100%;
+}
+
+.messageform input, .messageform textarea{
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.messageform textarea{
+    height: 150px;
+    resize: none;
+}
+
+.messageform button{
+    width: 100px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Calibri', sans-serif;
+}
+
+@media screen and (max-width: 651px) {
+    .contact-form {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .siado-informations {
+        float: none;
+        width: 100%;
+    }
+
+    .messageform button{
+        width: 100%;
+    }
+}

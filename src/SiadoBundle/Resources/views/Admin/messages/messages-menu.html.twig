@@ -1,0 +1,44 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-fw fa-envelope"></i>
+        <span class="d-lg-none">Messages
+            {% if messages|length > 0 %}
+            <span class="badge badge-pill badge-primary">{{ messages|length }}</span>
+            {% endif %}
+        </span>
+
+        {% if messages|length > 0 %}
+        <span class="indicator text-primary d-none d-lg-block">
+            <i class="fa fa-fw fa-circle">{{ messages|length }}</i>
+        </span>
+        {% endif %}
+
+    </a>
+    <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+        <h6 class="dropdown-header">
+            {% if messages|length > 0 %}
+                Nouveaux messages:
+            {% else %}
+                Aucun messages
+            {% endif %}
+        </h6>
+        <div class="dropdown-divider"></div>
+
+        {% set nb = 3 %}
+        {% if(messages|length < 3) %}
+            {% set nb = messages|length %}
+        {% endif %}
+
+        {% if nb > 0 %}
+            {% for i in 0..nb-1 %}
+                <a class="dropdown-item" href="{{ path('admin_message_show', { 'id': messages[i].id }) }}">
+                    <strong>{{ messages[i].nom }}</strong>
+                    <span class="small float-right text-muted">{{ messages[i].datemessage|date('d/m/Y') }}</span>
+                    <div class="dropdown-message small">{{ messages[i].message }}</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            {% endfor %}
+        {% endif %}
+        <a class="dropdown-item small" href="{{ path('admin_message_liste') }}">Voir tout</a>
+    </div>
+</li>

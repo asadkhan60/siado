@@ -1,0 +1,32 @@
+SiadoBundle\Entity\Message:
+    type: entity
+    table: null
+    repositoryClass: SiadoBundle\Repository\MessageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        telephone:
+            type: string
+            length: 255
+        objet:
+            type: string
+            length: 255
+        message:
+            type: text
+            length: 255
+        date_message:
+            type: datetime
+            length: 255
+        status:
+            type: integer
+    lifecycleCallbacks: {  }

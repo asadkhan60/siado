@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1" charset="UTF-8" />
+        <title>
+            {% block title %}Accueil{% endblock %}
+        </title>
+
+        <link href="{{ asset('css/base.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/accueil.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/slider.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/blog.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/contact-form.css') }}" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <div class="menu-top">
+                    <div class="container">
+                        <div class="logo">
+                            <h1>
+                                <a class="logo-siado" href="{{ path('siado_accueil') }}">
+                                    SIADO
+                                </a>
+                            </h1>
+                        </div>
+                        <ul class="menu-top-liste">
+                            <li>
+                                <a href="">Notre agence</a>
+                            </li>
+                            <li>
+                                <a href="">Nounou</a>
+                            </li>
+                            <li>
+                                <a href="">Jardinage</a>
+                            </li>
+                            <li>
+                                <a href="">Bricolage</a>
+                            </li>
+                        </ul>
+                        <div class="menu-hamburger">
+                            <img src="{{ asset('images/icones/icone-menu.png') }}">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-principal">
+                    <div class="container">
+                        <ul class="menu-principal-liste">
+                            <li class="menu-liste-li" style="border-bottom: 5px solid goldenrod">
+                                <a href="">
+                                    <img class="menu-icone" src="{{ asset('images/icones/menage2.png') }}">
+                                    <p class="menu-texte">
+                                        Ménage
+                                    </p>
+                                </a>
+
+                                <ul class="sous-menu">
+                                    <li class="sous-menu-li sous-menu-left">
+                                        <div class="sous-menu-titre">
+                                            Services Siado Ménage
+                                        </div>
+                                        <div class="sous-menu-description">
+                                            <ul class="sous-menu-description-liste">
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Rangement, Repassage</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Nettoyage intérieur / extérieur</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Nettoyage des sols (balayer, aspirer, laver)</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Nettoyage des poussières</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Vider le lave linge, étendre le linge</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Utiliser les produits ménagers recommandés par le client</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sous-menu-li sous-menu-right">
+                                        <div class="sous-menu-right-titre">
+                                            <div class="sous-menu-right-titre-top">
+                                                <!--<img src="{{ asset('images/icones/menage2.png') }}">-->
+                                                <span>Siado</span> Ménage
+                                            </div>
+                                            <div class="sous-menu-right-titre-bottom">
+                                                Parce que le ménage demande du temps et de l'énergie
+                                            </div>
+                                        </div>
+                                        <div class="sous-menu-message">
+                                            Les poussières sont partout !
+                                            Les enfants n’ont pas rangés leurs chambre et parce que vous n’avez pas le temps de repasser votre linge,
+                                            pas de panique SIADO s’en occupe avec un personnel expérimenté
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li><!--
+                         --><li class="menu-liste-li" style="border-bottom: 5px solid hotpink">
+                                <a href="">
+                                    <img class="menu-icone" src="{{ asset('images/icones/nounou2.png') }}">
+                                    <p class="menu-texte">
+                                        Garde enfants
+                                    </p>
+                                </a>
+
+                                <ul class="sous-menu">
+                                    <li class="sous-menu-li sous-menu-left">
+                                        <div class="sous-menu-titre">
+                                            Services Siado Garde enfants
+                                        </div>
+                                        <div class="sous-menu-description">
+                                            <ul class="sous-menu-description-liste">
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Entrées et Sorties des classes</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Préparer et donner un repas</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Entretenir les espaces de vie et le linge de l'enfant</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Procéder à la toilette et aux soins de l'enfant</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Accompagner l'enfant dans l'apprentissage des gestes de la vie quotidienne et des règles de vie en collectivités</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Activités pédagogiques</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sous-menu-li sous-menu-right">
+                                        <div class="sous-menu-right-titre">
+                                            <div class="sous-menu-right-titre-top">
+                                                <!--<img src="{{ asset('images/icones/nounou2.png') }}">-->
+                                                <span>Siado</span> Garde enfants
+                                            </div>
+                                            <div class="sous-menu-right-titre-bottom">
+                                                La garde de vos enfants en toute tranquilité
+                                            </div>
+                                        </div>
+                                        <div class="sous-menu-message">
+                                            De la crèche à l’école en passant par les activités extras scolaires des enfants et selon vos contraintes,
+                                            SIADO vous accompagne pour l’organisation de votre vie de famille afin de faciliter l’épanouissement de vos enfants.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li><!--
+                         --><li class="menu-liste-li" style="border-bottom: 5px solid mediumseagreen">
+                                <a href="">
+                                    <img class="menu-icone" src="{{ asset('images/icones/icone-aides2.png') }}">
+                                    <p class="menu-texte">
+                                        Personnes Agées / Handicapées
+                                    </p>
+                                </a>
+
+                                <ul class="sous-menu">
+                                    <li class="sous-menu-li sous-menu-left">
+                                        <div class="sous-menu-titre">
+                                            Services Siado personnes agées / handicapées
+                                        </div>
+                                        <div class="sous-menu-description">
+                                            <ul class="sous-menu-description-liste">
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Aide au lever</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Visites</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Aide à la mobilité</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Aide administrative</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Toilette et habillage</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Accompagnement aux courses</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sous-menu-li sous-menu-right">
+                                        <div class="sous-menu-right-titre">
+                                            <div class="sous-menu-right-titre-top">
+                                                <!--<img src="{{ asset('images/icones/icone-aides2.png') }}">-->
+                                                <span>Siado</span> Personnes agées / handicapées
+                                            </div>
+                                            <div class="sous-menu-right-titre-bottom">
+                                                Une aide à domicile adaptée
+                                            </div>
+                                        </div>
+                                        <div class="sous-menu-message">
+                                            Le maintien à domicile est vital pour les personnes âgées et leur famille.
+                                            SIADO met tout en œuvre pour vous aider dans les gestes de la vie quotidienne,
+                                            l'entretien du cadre de vie, de la vie sociale et relationnelle, dans le respect de l'intégrité de la personne.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li><!--
+                         --><li class="menu-liste-li" style="border-bottom: 5px solid darkorange">
+                                <a href="">
+                                    <img class="menu-icone" src="{{ asset('images/icones/jardinage-bricolage.png') }}">
+                                    <p class="menu-texte">
+                                        Bricolage / Jardinage
+                                    </p>
+                                </a>
+
+                                <ul class="sous-menu">
+                                    <li class="sous-menu-li sous-menu-left">
+                                        <div class="sous-menu-titre">
+                                            Services Siado Bricolage / Jardinage
+                                        </div>
+                                        <div class="sous-menu-description">
+                                            <ul class="sous-menu-description-liste">
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Entretien intérieur / extérieur</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Travaux de rénovation</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Montage et démontage de meubles</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Retouches de peinture</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Nettoyages de baies vitrées</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Grand nettoyage de printemps</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sous-menu-li sous-menu-right">
+                                        <div class="sous-menu-right-titre">
+                                            <div class="sous-menu-right-titre-top">
+                                                <!--<img src="{{ asset('images/icones/jardinage-bricolage.png') }}">-->
+                                                <span>Siado</span> Bricolage / Jardinage
+                                            </div>
+                                            <div class="sous-menu-right-titre-bottom">
+                                                Une maison entretenue toute l'année
+                                            </div>
+                                        </div>
+                                        <div class="sous-menu-message">
+                                            Parce que l’entretien de la maison nécessite parfois les bons outils et une certaine technicité SIADO vous aide avec un personnel polyvalent et compétent.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li><!--
+                         --><li class="menu-liste-li" style="border-bottom: 5px solid #17a2b8">
+                                <a href="">
+                                    <img class="menu-icone" src="{{ asset('images/icones/icone-soutien-scolaire2.png') }}">
+                                    <p class="menu-texte">
+                                        Soutien scolaire
+                                    </p>
+                                </a>
+
+                                <ul class="sous-menu">
+                                    <li class="sous-menu-li sous-menu-left">
+                                        <div class="sous-menu-titre">
+                                            Services Siado Soutien scolaire
+                                        </div>
+                                        <div class="sous-menu-description">
+                                            <ul class="sous-menu-description-liste">
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Aide aux devoirs</span>
+                                                </li>
+                                                <li class="sous-menu-description-liste-li">
+                                                    <i class="fa fa-arrow-right fa-properties icon-resize-small" aria-hidden="true"></i>
+                                                    <span>Exercices</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sous-menu-li sous-menu-right">
+                                        <div class="sous-menu-right-titre">
+                                            <div class="sous-menu-right-titre-top">
+                                                <!--<img src="{{ asset('images/icones/icone-soutien-scolaire2.png') }}">-->
+                                                <span>Siado</span> Soutien scolaire
+                                            </div>
+                                            <div class="sous-menu-right-titre-bottom">
+                                                La réussite des enfants est une exigence pour tout parents
+                                            </div>
+                                        </div>
+                                        <div class="sous-menu-message">
+                                            Un professeur dédié diplômé intervient à domicile pour non seulement faire comprendre les cours mais surtout pour donner des méthodes d’apprentissages pour acquérir l’autonomie.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        {% block body %}{% endblock %}
+
+        <footer>
+            <div class="container">
+                <div class="formulaire-contact">
+                    <p class="formulaire-contact-titre">
+                        Contactez-nous
+                    </p>
+                    <hr>
+
+                    <div class="form-content">
+                        {{ render(controller('SiadoBundle:Accueil:contactForm')) }}
+                        <div class="siado-informations">
+                            <p class="infos">Nos informations</p>
+                            <p class="info-logo-siado">
+                                Logo :
+                                <img src="">
+                            </p>
+                            <p class="info-adresse">Adresse :</p>
+                            <p class="info-telephone">Téléphone :</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    © SIADO 2017, tout droits réservés.
+                    <div class="icones">
+                        <ul class="icone-liste">
+                            <li>
+                                <a href="">
+                                    <img class="icone" src="{{ asset('images/icones/icone-fb.png') }}">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="icone" src="{{ asset('images/icones/icone-twitter.png') }}">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="icone" src="{{ asset('images/icones/icone-insta.png') }}">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="icone" src="{{ asset('images/icones/icone-linkedin.png') }}">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    Réalisé par Asad KHAN
+                </p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/menu.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

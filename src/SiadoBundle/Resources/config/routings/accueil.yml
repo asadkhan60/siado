@@ -1,0 +1,15 @@
+siado_accueil:
+    path:     /
+    defaults: { _controller: SiadoBundle:Accueil:index }
+
+siado_article_detail:
+    path:     /article/{id}
+    defaults: { _controller: SiadoBundle:Accueil:articleDetail }
+
+siado_article_liste_detail:
+    path:     /article-liste
+    defaults: { _controller: SiadoBundle:Accueil:articleListeDetail }
+
+siado_contact_form:
+    path:     /contact-form
+    defaults: { _controller: SiadoBundle:Accueil:contactForm }

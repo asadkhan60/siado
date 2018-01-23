@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <section class="section article-detail">
+        <div class="container">
+            <div class="blog-post">
+                <article class="post">
+                    <div class="header">
+                        <div class="titre">
+                            <h2>{{ article.titre }}</h2>
+                        </div>
+                        <div class="date">
+                            <time>{{ article.date|date("F") ~ " " ~ article.date|date('d') ~ ", " ~ article.date|date('Y') }}</time>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span class="image">
+                            <img src="{{ asset(articles_directory ~ article.image.file) }}" alt="">
+                        </span>
+                        <p class="description">
+                            {{ article.description|nl2br }}
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <ul class="actions pagination">
+                <li class="previous-li">
+                    {% if article_prev == null %}
+                        <a href="" class="disabled button-detail-article big previous">Precedent</a>
+                    {% else %}
+                        <a href="{{ path('siado_article_detail', {id: article_prev.id}) }}" class="button-detail-article big previous">Precedent</a>
+                    {% endif %}
+                </li>
+
+                <li class="next-li">
+                    {% if article_next == null %}
+                        <a href="" class="disabled button-detail-article big next">Suivant</a>
+                    {% else %}
+                        <a href="{{ path('siado_article_detail', {id: article_next.id}) }}" class="button-detail-article big next">Suivant</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </section>
+
+{% endblock %}

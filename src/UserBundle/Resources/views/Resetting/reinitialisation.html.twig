@@ -1,0 +1,17 @@
+{% extends "@User/layout.html.twig" %}
+
+{% block title %}Réinitialisation du mot de passe{% endblock %}
+
+{% block content %}
+    {% block fos_user_content %}
+        <div class="login-page">
+            <div class="form">
+                <form class="login-form" action="{{ path('fos_user_resetting_send_email') }}" method="POST">
+                    <input type="text" id="_username" name="_username" required="required" placeholder="Email"/>
+                    <button type="submit" id="_submit" name="_submit">Réinitialiser le mot de passe</button>
+                    <p class="message"><a href="{{ path('fos_user_security_login') }}">Se connecter</a></p>
+                </form>
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

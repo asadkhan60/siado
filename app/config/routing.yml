@@ -1,0 +1,7 @@
+siado:
+    resource: "@SiadoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /

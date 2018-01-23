@@ -1,0 +1,16 @@
+{% extends "@User/layout.html.twig" %}
+
+{% block content %}
+    {% block fos_user_content %}
+        <div class="login-page">
+            <div class="form">
+                Un mail de réinitialisation du mot de passe vient de vous etre envoyé !
+                <p class="message">
+                    <a href="{{ path('fos_user_security_login') }}">
+                        Se connecter
+                    </a>
+                </p>
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

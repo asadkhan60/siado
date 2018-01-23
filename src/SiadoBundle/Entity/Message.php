@@ -1,0 +1,228 @@
+<?php
+
+namespace SiadoBundle\Entity;
+
+/**
+ * Message
+ */
+class Message
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $email;
+
+    /**
+     * @var string
+     */
+    private $objet;
+
+    /**
+     * @var text
+     */
+    private $message;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     *
+     * @return Message
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Set objet
+     *
+     * @param string $objet
+     *
+     * @return Message
+     */
+    public function setObjet($objet)
+    {
+        $this->objet = $objet;
+
+        return $this;
+    }
+
+    /**
+     * Get objet
+     *
+     * @return string
+     */
+    public function getObjet()
+    {
+        return $this->objet;
+    }
+
+    /**
+     * Set message
+     *
+     * @param text $message
+     *
+     * @return Message
+     */
+    public function setMessage($message)
+    {
+        $this->message = $message;
+
+        return $this;
+    }
+
+    /**
+     * Get message
+     *
+     * @return text
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+    /**
+     * @var integer
+     */
+    private $status;
+
+
+    /**
+     * Set status
+     *
+     * @param integer $status
+     *
+     * @return Message
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return integer
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+    /**
+     * @var string
+     */
+    private $nom;
+
+    /**
+     * @var string
+     */
+    private $telephone;
+
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Message
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set telephone
+     *
+     * @param string $telephone
+     *
+     * @return Message
+     */
+    public function setTelephone($telephone)
+    {
+        $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    /**
+     * Get telephone
+     *
+     * @return string
+     */
+    public function getTelephone()
+    {
+        return $this->telephone;
+    }
+    /**
+     * @var \DateTime
+     */
+    private $date_message;
+
+
+    /**
+     * Set dateMessage
+     *
+     * @param \DateTime $dateMessage
+     *
+     * @return Message
+     */
+    public function setDateMessage($dateMessage)
+    {
+        $this->date_message = $dateMessage;
+
+        return $this;
+    }
+
+    /**
+     * Get dateMessage
+     *
+     * @return \DateTime
+     */
+    public function getDateMessage()
+    {
+        return $this->date_message;
+    }
+}

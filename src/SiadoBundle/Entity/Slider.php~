@@ -1,0 +1,112 @@
+<?php
+
+namespace SiadoBundle\Entity;
+
+/**
+ * Slider
+ */
+class Slider
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $titre;
+
+    /**
+     * @var string
+     */
+    private $titreButton;
+
+    /**
+     * @var string
+     */
+    private $urlSlide;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set titre
+     *
+     * @param string $titre
+     *
+     * @return Slider
+     */
+    public function setTitre($titre)
+    {
+        $this->titre = $titre;
+
+        return $this;
+    }
+
+    /**
+     * Get titre
+     *
+     * @return string
+     */
+    public function getTitre()
+    {
+        return $this->titre;
+    }
+
+    /**
+     * Set titreButton
+     *
+     * @param string $titreButton
+     *
+     * @return Slider
+     */
+    public function setTitreButton($titreButton)
+    {
+        $this->titreButton = $titreButton;
+
+        return $this;
+    }
+
+    /**
+     * Get titreButton
+     *
+     * @return string
+     */
+    public function getTitreButton()
+    {
+        return $this->titreButton;
+    }
+
+    /**
+     * Set urlSlide
+     *
+     * @param string $urlSlide
+     *
+     * @return Slider
+     */
+    public function setUrlSlide($urlSlide)
+    {
+        $this->urlSlide = $urlSlide;
+
+        return $this;
+    }
+
+    /**
+     * Get urlSlide
+     *
+     * @return string
+     */
+    public function getUrlSlide()
+    {
+        return $this->urlSlide;
+    }
+}

@@ -1,0 +1,126 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <section class="slider">
+        <ul class="slider-images">
+            <li class="slider-image slider-selected">
+                <div class="slider-content">
+                    <img src="{{ asset('images/info1.jpg') }}">
+
+                    <div class="container">
+                        <div class="slider-description">
+                            <div class="slider-title">
+                                PROPRE, NET ET RANGE !
+                            </div>
+                            <div class="slider-bouton">
+                                <a class="bouton" href="#">
+                                    Demander de l'aide
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="slider-image">
+                <div class="slider-content">
+                    <img src="{{ asset('images/info2.jpg') }}">
+
+                    <div class="container">
+                        <div class="slider-description">
+                            <div class="slider-title">
+                                AAAAAAAAAAAAAAA !
+                            </div>
+                            <div class="slider-bouton">
+                                <a class="bouton" href="#">
+                                    Demander de l'aide
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="slider-image">
+                <div class="slider-content">
+                    <img src="{{ asset('images/info3.jpg') }}">
+
+                    <div class="container">
+                        <div class="slider-description">
+                            <div class="slider-title">
+                                AAAAAAAAAAAAAAA !
+                            </div>
+                            <div class="slider-bouton">
+                                <a class="bouton" href="#">
+                                    Demander de l'aide
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a>
+            <div class="slide-prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+        </a>
+
+        <a>
+            <div class="slide-next">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+        </a>
+    </section>
+
+
+    <section class="section actualite">
+        <div class="container">
+            <p class="section-titre">
+                Actualité
+                <span class="section-sous-titre">Nos derniers articles !</span>
+            </p>
+
+            {% if articles|length > 0 %}
+            <div class="blog">
+                {% for article in articles %}
+                    <div class="blog-content">
+                        <h1 class="blog-titre">
+                            {{ article.titre }}
+                            <span class="blog-sous-titre">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            Le {{ article.date | date('d/m/Y') }}
+                        </span>
+                        </h1>
+                        <div class="blog-image">
+                            <img src="{{ asset(articles_directory) ~ article.image.file }}">
+                        </div>
+                        <div class="blog-paragraphe">
+                            <p>
+                                {{ article.description | slice(0,200) }} [...]
+                            </p>
+                        </div>
+
+                        <div class="blog-button-detail">
+                            <a class="button-detail" href="{{ path('siado_article_detail', { id: article.id }) }}">Lire plus</a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+                <a href="{{ path('siado_article_liste_detail') }}" class="blog-button">
+                    Voir tout
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+{% endblock body %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/slider.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/accueil.js') }}"></script>
+{% endblock javascripts %}

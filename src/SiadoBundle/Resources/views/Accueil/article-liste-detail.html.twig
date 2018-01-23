@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <section class="section article-detail">
+        <div class="container">
+            <div class="blog-post">
+                {% for article in articles %}
+                <article class="post">
+                    <div class="header">
+                        <div class="titre">
+                            <h2>{{ article.titre }}</h2>
+                        </div>
+                        <div class="date">
+                            <time>{{ article.date|date("F") ~ " " ~ article.date|date('d') ~ ", " ~ article.date|date('Y') }}</time>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span class="image">
+                            <img src="{{ asset(articles_directory ~ article.image.file) }}" alt="">
+                        </span>
+                        <p class="description">
+                            {{ article.description|slice(0,200) }} [...]
+                        </p>
+                    </div>
+
+                    <div class="blog-button-detail button-center">
+                        <a class="button-detail-article big" href="{{ path('siado_article_detail', { id: article.id }) }}">Voir</a>
+                    </div>
+
+                </article>
+                {% endfor %}
+            </div>
+
+            <!--<ul class="actions pagination">
+                {# set num = number_articles_page #}
+                <li class="previous-li">
+                    {# if (first*num) <= 0 #}
+                        <a href="" class="disabled button-detail-article big previous">Page precedente</a>
+                    {# else #}
+                        <a href="{# path('siado_article_liste_detail', {first: first-1}) #}" class="button-detail-article big previous">Page précedente</a>
+                    {# endif #}
+                </li>
+
+                <li class="next-li">
+                    {# if (first*num) >= (max-num) #}
+                        <a href="" class="disabled button-detail-article big next">Page suivante</a>
+                    {# else #}
+                        <a href="{# path('siado_article_liste_detail', {first: first+1}) #}" class="button-detail-article big next">Page suivante</a>
+                    {# endif #}
+                </li>
+            </ul>-->
+        </div>
+    </section>
+
+{% endblock %}

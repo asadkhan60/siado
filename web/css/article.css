@@ -1,0 +1,144 @@
+.link-cursor{
+    cursor: pointer;
+}
+
+.bouton-md-5{
+    margin-right: 5px;
+}
+
+.bouton-md-10{
+    margin-right: 10px;
+}
+
+.bouton-mg-5{
+    margin-left: 5px;
+}
+
+.bouton-mg-10{
+    margin-left: 10px;
+}
+
+.date-article{
+    float: right;
+    line-height: 3;
+}
+
+.article-image{
+    height: 100%;
+}
+
+.article-image-full{
+    height: 100%;
+}
+
+.article-paragraph{
+    min-height: 80px;
+}
+
+.article-content{
+   margin-bottom: 55px;
+   padding: 20px 0 20px 0;
+}
+
+.article-titre{
+    color: rgb(52,58,64);
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.margin-bottom-10{
+     margin-bottom: 10px !important;
+ }
+
+.margin-bottom-15{
+    margin-bottom: 15px !important;
+}
+
+.margin-bottom-20{
+    margin-bottom: 20px !important;
+}
+
+.margin-bottom-25{
+    margin-bottom: 25px !important;
+}
+
+.margin-bottom-30{
+    margin-bottom: 30px !important;
+}
+
+.margin-bottom-35{
+    margin-bottom: 35px !important;
+}
+
+.margin-bottom-40{
+    margin-bottom: 40px !important;
+}
+
+.margin-bottom-45{
+    margin-bottom: 45px !important;
+}
+
+.margin-bottom-50{
+    margin-bottom: 50px !important;
+}
+
+.remove_article_confirm, .remove_message_confirm{
+    color: #FFFFFF !important;
+}
+
+.form_article{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form_article_label_titre, .form_article_label_description, .form_article_label_file{
+    width: 100%;
+}
+
+.form_article_input_titre, .form_article_input_description, .form_article_input_file{
+    width: 100%;
+}
+
+.form_article_label_description{
+    vertical-align: top;
+}
+
+.form_article_input_description{
+    min-height: 300px;
+}
+
+.form_article_button{
+    width: 100%;
+}
+
+.article_titre, .article_description, .article_file{
+    margin-bottom: 20px;
+}
+
+.current-edit-image{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .form_article {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .card-body a{
+        display: block !important;
+        margin-bottom: 10px;
+    }
+
+    .card-body a button{
+        width: 100%;
+    }
+
+    .card-columns hr{
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+}

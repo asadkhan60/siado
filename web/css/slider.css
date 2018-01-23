@@ -1,0 +1,123 @@
+/* PARTIE SLIDER */
+.slider{
+    width: 100%;
+    position: relative;
+    height: 500px;
+    border-bottom: 10px solid #eaebeb;
+}
+
+.slider .slider-images .slider-image img{
+    width: 100%;
+    height: 500px;
+}
+
+.slider-images .slider-image{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-images{
+    position: relative;
+    height: 100%;
+}
+
+.slider-image{
+    position: absolute;
+    opacity: 0;
+}
+
+.slider-selected{
+    opacity: 1;
+    transition-duration: 300ms;
+}
+
+.slider-description{
+    position: absolute;
+    top: 300px;
+    left: 18%;
+}
+
+.slider-image .slider-title{
+    display: block;
+    color: white;
+    font-family: 'bauhausef-medium';
+    line-height: 1;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px rgba(26,23,27,0.50);
+    text-transform: uppercase;
+}
+
+.slider-bouton{
+    margin-top: 20px;
+}
+
+.slider-bouton .bouton{
+    background: #64b8e1;
+    border: 2px solid #fff;
+    color: #fff;
+    /*border-radius: 12px 0px 23px 12px;*/
+    padding: 10px 14px 10px 18px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.slider-bouton .button i {
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    margin-left: 5px;
+    width: 0px;
+    overflow: hidden;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    opacity: 0;
+    left: 30px;
+}
+
+.slide-prev, .slide-next{
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slide-prev i{
+    color: white;
+    position: absolute;
+    left: 22px;
+    top: 23px;
+}
+
+.slide-next i{
+    color: white;
+    position: absolute;
+    left: 25px;
+    top: 23px;
+}
+
+.slide-prev{
+    left: 0;
+    margin: 10px;
+}
+
+.slide-next{
+    right: 0;
+    margin: 10px;
+}
+
+@media screen and (max-width: 651px) {
+    .slider{
+        display: none !important;
+    }
+}

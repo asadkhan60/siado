@@ -1,0 +1,41 @@
+admin:
+    path: /admin/
+    defaults: { _controller: SiadoBundle:Admin:index }
+
+
+admin_article_liste:
+    path: /admin/article-list
+    defaults: { _controller: SiadoBundle:Admin:articlesList }
+
+admin_article_add:
+    path: /admin/article-add
+    defaults: { _controller: SiadoBundle:Admin:articleAdd }
+
+admin_article_show:
+    path: /admin/article-show/{id}
+    defaults: { _controller: SiadoBundle:Admin:articleShow }
+
+admin_article_edit:
+    path: /admin/article-edit/{id}
+    defaults: { _controller: SiadoBundle:Admin:articleEdit }
+
+admin_article_remove:
+    path: /admin/article-remove
+    defaults: { _controller: SiadoBundle:Admin:articleRemove }
+
+
+admin_render_view:
+    path: /admin/messages-menu
+    defaults: { _controller: SiadoBundle:Admin:messagesMenu }
+
+admin_message_liste:
+    path: /admin/message-list
+    defaults: { _controller: SiadoBundle:Admin:messagesList }
+
+admin_message_show:
+    path: /admin/message-show/{id}
+    defaults: { _controller: SiadoBundle:Admin:messageShow }
+
+admin_message_remove:
+    path: /admin/message-remove
+    defaults: { _controller: SiadoBundle:Admin:messageRemove }

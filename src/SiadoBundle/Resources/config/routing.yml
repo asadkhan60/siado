@@ -1,0 +1,5 @@
+siado_accueil:
+    resource: routings/accueil.yml
+
+user_admin:
+    resource: routings/admin.yml

@@ -1,0 +1,351 @@
+html{
+ height: 100%;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ font-family: Calibri, Arial, sans-serif;
+}
+
+ul, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+ max-width: 75em;
+ margin: 0 auto;
+ height: 100%;
+}
+
+/* PARTIE MENU */
+.menu{
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 9999;
+}
+
+.menu-top{
+ padding: 10px;
+ background-color: white;
+ color: black;
+ min-height: 28px;
+}
+
+.menu-top .logo{
+ float: left;
+}
+
+.menu-top .menu-top-liste{
+ float: right;
+ text-align: right;
+ line-height: 2.5;
+ font-size: 12px;
+}
+
+.menu-top .menu-top-liste li, .menu-principal .menu-principal-liste .menu-liste-li{
+ display: inline-block;
+ list-style: none;
+}
+
+.menu-top .menu-top-liste li a{
+ text-decoration: none;
+ color: black;
+}
+
+.menu-top .menu-top-liste li{
+ padding-left: 10px;
+ padding-right: 10px;
+ border-right: 1px solid black;
+}
+
+.menu-top .menu-top-liste li:last-child{
+ border-right: none;
+ padding-right: 0;
+}
+
+.menu-principal{
+ height: auto;
+ background: url("../images/site/menu-fond.png") repeat;
+ min-height: 92px;
+}
+
+.menu-principal .menu-principal-liste{
+ float: right;
+ font-size: 14px;
+ position: relative;
+}
+
+.menu-principal .menu-principal-liste .menu-liste-li a{
+ text-decoration: none;
+ color: white;
+ text-transform: uppercase;
+}
+
+.menu-principal .menu-principal-liste .menu-liste-li{
+ padding: 10px;
+ border-right: 1px solid grey;
+ cursor: pointer;
+ min-width: 100px;
+}
+
+.menu-principal .menu-principal-liste .menu-liste-li:first-child{
+ border-left: 1px solid grey;
+}
+
+.menu-principal .menu-principal-liste .menu-liste-li:hover{
+ background-color: #5eb5e0;
+}
+
+.menu-principal .menu-icone{
+ height: 40px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 10px;
+}
+
+.menu-principal .menu-texte{
+ text-align: center;
+ margin: 0;
+}
+
+.sous-menu{
+    background-color: white;
+    min-height: 240px;
+    width: 758px;
+    position: absolute;
+    left: 0px;
+    margin-top: 15px;
+    border-bottom: 5px solid darkblue;
+    display: none;
+    cursor: default;
+}
+
+.sous-menu-active{
+    display: block;
+}
+
+.menu-principal .menu-principal-liste .menu-liste-li .sous-menu .sous-menu-li{
+ list-style: none;
+ display: inline-block;
+ padding: 10px;
+}
+
+.sous-menu-li div{
+ min-height: 100%;
+}
+
+.sous-menu-left{
+ vertical-align: top;
+ width: 46%;
+}
+
+.sous-menu-right{
+ vertical-align: top;
+ width: 48.3%;
+}
+
+.sous-menu-titre{
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 16px;
+}
+
+.sous-menu-description{
+ margin-top: 20px;
+}
+
+.sous-menu-description-liste-li{
+ list-style: none;
+ margin: 5px 0 5px 0;
+}
+
+.sous-menu-description-liste-li i{
+ padding: 3px;
+}
+
+.sous-menu-description-liste-li span{
+ display: inline-block;
+ width: calc(100% - 7%);
+ text-align: justify;
+}
+
+.fa-properties{
+ width: 10px;
+ height: 10px;
+ color: #FFFFFF;
+ font-size: 10px !important;
+ text-align: center;
+ margin-right: 5px;
+ vertical-align: top;
+}
+
+.sous-menu-right-titre{
+ text-transform: uppercase;
+ margin-bottom: 15px;
+}
+
+.sous-menu-right-titre-top{
+ font-weight: bold;
+}
+
+.sous-menu-right-titre img{
+ height: 35px;
+ width: 35px;
+ background-color: #17a2b8;
+ margin-right: 5px;
+}
+
+.sous-menu-right-titre span{
+ color: black;
+}
+
+.sous-menu-message{
+ text-align: justify;
+}
+
+.menu-hamburger{
+ float: right;
+ display: none;
+ vertical-align: top;
+}
+
+.menu-hamburger img{
+ width: 30px;
+ height: 30px;
+ cursor: pointer;
+}
+
+.logo-siado{
+ color: #1b1e21;
+ text-decoration: none;
+}
+
+
+footer{
+ padding: 30px 0 0 0;
+ width: 100%;
+ min-height: 500px;
+ background-color: #1b1e21;
+ bottom: 0;
+ color: #FFFFFF;
+ font-family: 'Open Sans', serif;
+}
+
+.formulaire-contact{
+ margin: 0 20px 0 20px;
+ overflow: inherit;
+}
+
+.formulaire-contact-titre{
+ text-transform: uppercase;
+ overflow: auto;
+}
+
+.copyright{
+ text-align: center;
+ background-color: #040505;
+ padding: 15px;
+ font-size: 12px;
+ clear: both;
+}
+
+.copyright p {
+ display: inline-block;
+}
+
+.icones {
+ display: inline-block;
+ margin-left: 10px;
+}
+
+.icones .icone-liste{
+ list-style: none;
+}
+
+.icones .icone-liste li{
+ display: inline-block;
+ padding: 0 2px 0 2px;
+}
+
+.icones .icone-liste .icone{
+ width: 15px;
+ height: 15px;
+}
+
+.form-content{
+ width: 100%;
+ overflow: auto;
+ margin: 30px 0 30px 0;
+}
+
+.siado-informations{
+ float: right;
+ width: 35%;
+}
+
+.infos{
+ text-transform: uppercase;
+ font-family: 'Open Sans', serif;
+ font-size: 14px;
+ color: #FFFFFF;
+ text-align: center;
+ margin-bottom: 25px;
+}
+
+.info-logo-siado, .info-adresse, .info-telephone{
+ font-size: 12px;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+@media screen and (max-width: 901px) {
+ .menu-top{
+  display: block !important;
+ }
+
+ .menu-top-liste {
+  display:none;
+ }
+
+ .menu-principal .menu-principal-liste {
+  float: none;
+ }
+
+ .menu-top .menu-top-liste li, .menu-principal .menu-principal-liste .menu-liste-li{
+  display: block;
+ }
+
+ .menu-principal .menu-icone{
+  display: none !important;
+ }
+
+ .sous-menu{
+  display: none;
+ }
+
+ .menu-hamburger{
+  display: block;
+ }
+
+ .menu-principal{
+  display: none;
+ }
+
+ .slider-image .slider-title{
+  font-size: 35px !important;
+ }
+}
+
+
+@media screen and (max-width: 651px) {
+ .blog .blog-content{
+  display: block !important;
+  margin: 30px auto !important;
+  width: 70% !important;
+  float: none !important;
+ }
+}
