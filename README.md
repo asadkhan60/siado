@@ -1,7 +1,6 @@
 # siado
 
-1) Placer vous dans le repertoire du projet en ligne de commande : 
-	cd <chemin vers le projet siado>
+1) Placer vous dans le repertoire du projet en ligne de commande : cd [chemin vers le projet siado]
 
 2) Installer les dépendances du projet via la commande :
 	php composer.phar install
