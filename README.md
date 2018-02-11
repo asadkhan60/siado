@@ -14,7 +14,10 @@
 5) Démarrer le serveur :
 	php bin/console server:run
 
-6) Ajouter des articles sur le site à l'adresse suivante :
-	http://[host]:[port]>/admin (identifiant et mot de passe = admin par défaut)
+6) Créer un administrateur et l'activer en ligne de commande pour ajouter des articles sur le site : 
+	php bin/console fos:user:create username test@example.com p@ssword --super-admin
+	php bin/console fos:user:activate username
 
-7) Configurer votre fichier app/config/parameters.yml et le fichier app/config/config.yml pour envoyer/recevoir des mails
+7) Rendez vous sur http://[host]:[port]/admin et identifiez vous avec l'utilisateur créé juste avant.
+
+8) Configurer votre fichier app/config/parameters.yml et le fichier app/config/config.yml pour envoyer/recevoir des mails
