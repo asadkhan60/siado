@@ -15,7 +15,7 @@
 	php bin/console server:run
 
 6.1) Créer un administrateur en ligne de commande pour ajouter des articles sur le site : 
-	php bin/console fos:user:create username test@example.com p@ssword --super-admin
+	php bin/console fos:user:create [username] [email] [password] --super-admin
 
 6.2) Activer l'utilisateur créé :
 	php bin/console fos:user:activate username
