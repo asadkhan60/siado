@@ -20,6 +20,32 @@ class AccueilController extends Controller
         ));
     }
 
+
+    public function menageAction()
+    {
+        return $this->render('@Siado/Accueil/menage.html.twig');
+    }
+
+    public function gardeEnfantsAction()
+    {
+        return $this->render('@Siado/Accueil/garde-enfants.html.twig');
+    }
+
+    public function aideMobiliteAction()
+    {
+        return $this->render('@Siado/Accueil/aides-mobilite.html.twig');
+    }
+
+    public function bricolageJardinageAction()
+    {
+        return $this->render('@Siado/Accueil/bricolage-jardinage.html.twig');
+    }
+
+    public function aideDevoirsAction()
+    {
+        return $this->render('@Siado/Accueil/aides-devoirs.html.twig');
+    }
+
     public function articleDetailAction($id)
     {
         $em = $this->getDoctrine()->getManager();

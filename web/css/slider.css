@@ -2,18 +2,19 @@
 .slider{
     width: 100%;
     position: relative;
-    height: 500px;
+    height: 700px;
     border-bottom: 10px solid #eaebeb;
 }
 
 .slider .slider-images .slider-image img{
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
 .slider-images .slider-image{
     list-style: none;
     width: 100%;
+    height: 100%;
 }
 
 .slider-images{
@@ -24,6 +25,11 @@
 .slider-image{
     position: absolute;
     opacity: 0;
+    height: 100%;
+}
+
+.slider-content{
+    height: 100%;
 }
 
 .slider-selected{
@@ -33,7 +39,7 @@
 
 .slider-description{
     position: absolute;
-    top: 300px;
+    top: 360px;
     left: 18%;
 }
 

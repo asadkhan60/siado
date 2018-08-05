@@ -91,4 +91,13 @@ $(document).ready(function() {
     if (!window.matchMedia("(max-width: 651px)").matches) {
         startSlider();
     }
+    
+    
+    $(".slider-bouton .bouton").click(function (ev) {
+        ev.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("footer").offset().top
+        }, 1000);
+    });
+    
 });

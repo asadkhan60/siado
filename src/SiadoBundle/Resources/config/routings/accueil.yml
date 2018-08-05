@@ -2,6 +2,26 @@ siado_accueil:
     path:     /
     defaults: { _controller: SiadoBundle:Accueil:index }
 
+siado_menage:
+    path:     /menage
+    defaults: { _controller: SiadoBundle:Accueil:menage }
+
+siado_garde_enfants:
+    path:     /garde-enfants
+    defaults: { _controller: SiadoBundle:Accueil:gardeEnfants }
+
+siado_aide_mobilite:
+    path:     /aides-mobilite
+    defaults: { _controller: SiadoBundle:Accueil:aideMobilite }
+
+siado_jardinage_bricolage:
+    path:     /jardinage-bricolage
+    defaults: { _controller: SiadoBundle:Accueil:bricolageJardinage }
+
+siado_aide_devoirs:
+    path:     /aides-devoirs
+    defaults: { _controller: SiadoBundle:Accueil:aideDevoirs }
+
 siado_article_detail:
     path:     /article/{id}
     defaults: { _controller: SiadoBundle:Accueil:articleDetail }
