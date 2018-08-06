@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edaaf1a4-d607-44f0-a75b-ffa2e215f5cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/accueil.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/accueil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/accueil.css" afterPath="$PROJECT_DIR$/web/css/accueil.css" />
+      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
+      <change beforePath="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" afterPath="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" />
+      <change beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig" />
+      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
+      <change beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change beforePath="$PROJECT_DIR$/web/css/accueil.css" afterPath="$PROJECT_DIR$/web/css/accueil.css" />
+      <change beforePath="$PROJECT_DIR$/web/css/contact-form.css" afterPath="$PROJECT_DIR$/web/css/contact-form.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,21 +26,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="accueil.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/accueil.html.twig">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+            <state relative-caret-position="-3800">
+              <caret line="104" column="50" lean-forward="false" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/slider.js">
+      <file leaf-file-name="AccueilController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Controller/AccueilController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="5" lean-forward="false" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+            <state relative-caret-position="-1151">
+              <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageType.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+              <folding>
+                <element signature="e#118#149#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact-form.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/contact-form.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accueil.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/accueil.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="213" column="7" lean-forward="false" selection-start-line="213" selection-start-column="7" selection-end-line="213" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -43,78 +81,18 @@
       <file leaf-file-name="menage.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="238">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aides-devoirs.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig">
+      <file leaf-file-name="accueil.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/accueil.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aides-mobilite.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bricolage-jardinage.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="garde-enfants.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accueil.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/config/routings/accueil.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accueil.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/accueil.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+            <state relative-caret-position="17">
+              <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -190,13 +168,11 @@
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/article-liste-detail.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/contact-form.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Repository/ArticleRepository.php" />
-        <option value="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/contact-form-email.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/config/doctrine/Message.orm.yml" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Entity/Message.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Admin/articles/article-show.html.twig" />
-        <option value="$PROJECT_DIR$/web/css/contact-form.css" />
         <option value="$PROJECT_DIR$/web/css/base.css" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Form/ImageType.php" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Form/ArticleType.php" />
@@ -216,14 +192,16 @@
         <option value="$PROJECT_DIR$/src/SiadoBundle/Controller/AccueilController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/config/routings/accueil.yml" />
-        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig" />
-        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig" />
-        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig" />
         <option value="$PROJECT_DIR$/web/js/slider.js" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/accueil.html.twig" />
-        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig" />
+        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig" />
+        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig" />
+        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" />
+        <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig" />
         <option value="$PROJECT_DIR$/web/css/accueil.css" />
+        <option value="$PROJECT_DIR$/web/css/contact-form.css" />
+        <option value="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" />
       </list>
     </option>
   </component>
@@ -346,6 +324,13 @@
               <item name="siado" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SiadoBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="siado" type="b2602c69:ProjectViewProjectNode" />
+              <item name="siado" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SiadoBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -409,8 +394,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -449,6 +434,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -494,25 +482,28 @@
       <workItem from="1533466144854" duration="1171000" />
       <workItem from="1533469754696" duration="3109000" />
       <workItem from="1533512337524" duration="1512000" />
+      <workItem from="1533550855655" duration="3536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426540000" />
+    <option name="totallyTimeSpent" value="430076000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2718509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15884861" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3021739" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20861372" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -596,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/contact-form-email.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -656,13 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/contact-form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -822,10 +799,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs" />
-    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Controller/AccueilController.php">
+    <entry file="file://$PROJECT_DIR$/web/js/accueil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1348">
+          <caret line="92" column="5" lean-forward="false" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -838,49 +822,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/accueil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="5" lean-forward="false" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="67" />
+        <state relative-caret-position="136">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="136">
+          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="136">
+          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -893,27 +862,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="-3800">
+          <caret line="104" column="50" lean-forward="false" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Controller/AccueilController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1151">
+          <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/contact-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/accueil.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+        <state relative-caret-position="459">
+          <caret line="213" column="7" lean-forward="false" selection-start-line="213" selection-start-column="7" selection-end-line="213" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding>
+            <element signature="e#118#149#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -10,6 +10,7 @@ namespace SiadoBundle\Form;
 
 use SiadoBundle\Entity\Message;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -46,13 +47,18 @@ class MessageType extends AbstractType
                     'placeholder' => "Téléphone *"
                 )
             )
-        )->add('objet', TextType::class,
+        )->add('objet', ChoiceType::class,
             array(
                 'required' => true,
                 'mapped' => true,
-                'attr' => array(
-                    'placeholder' => "Sujet *"
-                )
+                'choices'  => array(
+                    'Selectionnez un service' => null,
+                    'Siado Ménage' => "Siado Ménage",
+                    'Siado Garde Enfants' => "Siado Garde Enfants",
+                    'Siado Aides Mobilité' => "Siado Aides Mobilité",
+                    'Siado Bricolage / Jardinage' => "Siado Bricolage / Jardinage",
+                    'Siado Soutien Scolaire' => "Siado Soutien Scolaire"
+                ),
             )
         )->add('message', TextareaType::class,
             array(

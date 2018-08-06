@@ -143,10 +143,48 @@
 }
 
 .main-image .siado-services p{
-    width: 40%;
+    width: 30%;
     margin: 0 auto;
     padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
+
+.main-image .siado-services p:hover{
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.main-image .bottom-border-menage, .main-image .bottom-border-garde-enfants, .main-image .bottom-border-aides-mobilite, .main-image .bottom-border-travaux-maison, .main-image .bottom-border-soutien-scolaire{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 10px;
+}
+
+.bottom-border-menage{
+    background-color: rgba(218,165,32,0.7);
+}
+
+.bottom-border-garde-enfants{
+    background-color: rgba(255,105,180,0.7);
+}
+
+.bottom-border-aides-mobilite{
+    background-color: rgba(60, 179, 113,0.7);
+}
+
+.bottom-border-travaux-maison{
+    background-color: rgba(255, 140, 0, 0.7);
+}
+
+.bottom-border-soutien-scolaire{
+    background-color: rgba(23, 162, 184, 0.7);
+}
+
 
 .main-image .siado-menage-title{
     background-color: rgba(218,165,32,0.7);
@@ -156,9 +194,25 @@
     background-color: rgba(255,105,180,0.7);
 }
 
+.main-image .siado-aides-mobilite-title{
+    background-color: rgba(60, 179, 113,0.7);
+}
+
+.main-image .siado-travaux-maison-title{
+    background-color: rgba(255, 140, 0, 0.7);
+}
+
+.main-image .siado-soutien-scolaire-title{
+    background-color: rgba(23, 162, 184, 0.7);
+}
+
 .main-image img{
     height: 100%;
     width: 100%;
+}
+
+section.service-description{
+    min-height: 800px;
 }
 
 @media screen and (max-width: 901px) {

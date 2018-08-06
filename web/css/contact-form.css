@@ -13,6 +13,12 @@
     margin-bottom: 10px;
 }
 
+.messageform select{
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 .messageform textarea{
     height: 150px;
     resize: none;
