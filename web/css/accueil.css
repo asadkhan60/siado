@@ -123,9 +123,43 @@
 
 .article-detail-image img{
     width: 100%;
-    height: 500px;
+    height: 650px;
 }
 
+.main-image{
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+
+.main-image .siado-services {
+    bottom:35%;
+    width: 100%;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    font-family: Roboto;
+    color: #FFFFFF;
+}
+
+.main-image .siado-services p{
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-image .siado-menage-title{
+    background-color: rgba(218,165,32,0.7);
+}
+
+.main-image .siado-garde-enfants-title{
+    background-color: rgba(255,105,180,0.7);
+}
+
+.main-image img{
+    height: 100%;
+    width: 100%;
+}
 
 @media screen and (max-width: 901px) {
     .article-detail-image img{
