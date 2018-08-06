@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edaaf1a4-d607-44f0-a75b-ffa2e215f5cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" afterPath="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/accueil.css" afterPath="$PROJECT_DIR$/web/css/accueil.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" afterPath="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="aides-devoirs.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aides-devoirs.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -51,14 +46,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageType.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageType.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-              <folding>
-                <element signature="e#118#149#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="148">
+              <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -260,13 +253,13 @@
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/accueil.html.twig" />
         <option value="$PROJECT_DIR$/web/css/slider.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" />
         <option value="$PROJECT_DIR$/web/css/accueil.css" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/menage.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/garde-enfants.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/bricolage-jardinage.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-mobilite.html.twig" />
         <option value="$PROJECT_DIR$/src/SiadoBundle/Resources/views/Accueil/aides-devoirs.html.twig" />
+        <option value="$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php" />
       </list>
     </option>
   </component>
@@ -549,12 +542,12 @@
       <workItem from="1533512337524" duration="1512000" />
       <workItem from="1533550855655" duration="5196000" />
       <workItem from="1533571374817" duration="4892000" />
-      <workItem from="1533596589443" duration="1211000" />
+      <workItem from="1533596589443" duration="1563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437839000" />
+    <option name="totallyTimeSpent" value="438191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -955,16 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding>
-            <element signature="e#118#149#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/accueil.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1027,6 +1010,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="103" lean-forward="false" selection-start-line="26" selection-start-column="103" selection-end-line="26" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SiadoBundle/Form/MessageType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
           <folding />
         </state>
       </provider>
