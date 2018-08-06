@@ -126,6 +126,48 @@
     height: 650px;
 }
 
+
+
+.menage-color{
+    color: rgb(218,165,32);
+}
+
+.menage-bg{
+    background-color: rgb(218,165,32);
+}
+
+.garde-enfants-color{
+    color: rgb(255,105,180);
+}
+
+.garde-enfants-bg{
+    background-color: rgb(255,105,180);
+}
+
+.aides-mobilite-color{
+    color: rgb(60, 179, 113);
+}
+
+.aides-mobilite-bg{
+    background-color: rgb(60, 179, 113);
+}
+
+.bricolage-jardinage-color{
+    color: rgb(255, 140, 0);
+}
+
+.bricolage-jardinage-bg{
+    background-color: rgb(255, 140, 0);
+}
+
+.soutien-scolaire-color{
+    color: rgb(23, 162, 184);
+}
+
+.soutien-scolaire-bg{
+    background-color: rgb(23, 162, 184);
+}
+
 .main-image{
     width: 100%;
     height: 850px;
@@ -211,8 +253,51 @@
     width: 100%;
 }
 
-section.service-description{
+section.service{
     min-height: 800px;
+    padding: 50px 0;
+}
+
+.service .service-title{
+    padding: 50px 0;
+}
+
+.service .service-title .title{
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 10px 0;
+    /*color: rgb(218,165,32);*/
+}
+
+.separator{
+    width: 50%;
+}
+
+hr.menage-sep{
+    border-top: 1px solid rgb(218,165,32);
+}
+
+.service .service-description p{
+    font-family: 'PT Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-description-liste-li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.service-description-liste-li i{
+    padding: 10px;
+}
+
+.service-description-liste-li span{
+    vertical-align: middle;
+    font-size: 20px;
+    margin-top: 3px;
+    display: inline-block;
 }
 
 @media screen and (max-width: 901px) {

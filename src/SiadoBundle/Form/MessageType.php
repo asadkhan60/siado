@@ -52,12 +52,12 @@ class MessageType extends AbstractType
                 'required' => true,
                 'mapped' => true,
                 'choices'  => array(
-                    'Selectionnez un service' => null,
-                    'Siado Ménage' => "Siado Ménage",
-                    'Siado Garde Enfants' => "Siado Garde Enfants",
-                    'Siado Aides Mobilité' => "Siado Aides Mobilité",
-                    'Siado Bricolage / Jardinage' => "Siado Bricolage / Jardinage",
-                    'Siado Soutien Scolaire' => "Siado Soutien Scolaire"
+                    'Tout services' => "Siado Services",
+                    'Service Ménage' => "Service Ménage",
+                    'Service Garde Enfants' => "Siado Garde Enfants",
+                    'Service Aides Mobilité' => "Siado Aides Mobilité",
+                    'Service Bricolage / Jardinage' => "Siado Bricolage / Jardinage",
+                    'Service Soutien Scolaire' => "Siado Soutien Scolaire"
                 ),
             )
         )->add('message', TextareaType::class,
