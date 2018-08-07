@@ -266,8 +266,19 @@ section.service{
     font-family: 'Cinzel', serif;
     font-size: 30px;
     text-align: center;
-    padding: 0 0 10px 0;
     /*color: rgb(218,165,32);*/
+}
+
+.service .service-title .sous-title{
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    color: #828282;
+}
+
+.service .service-title hr{
+    margin: 10px auto 20px auto;
 }
 
 .separator{
