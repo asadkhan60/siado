@@ -278,6 +278,22 @@ hr.menage-sep{
     border-top: 1px solid rgb(218,165,32);
 }
 
+hr.garde-enfants-sep{
+    border-top: 1px solid rgb(255,105,180);
+}
+
+hr.aides-mobilite-sep{
+    border-top: 1px solid rgb(60, 179, 113);
+}
+
+hr.bricolage-jardinage-sep{
+    border-top: 1px solid rgb(255, 140, 0);
+}
+
+hr.soutien-scolaire-sep{
+    border-top: 1px solid rgb(23, 162, 184);
+}
+
 .service .service-description p{
     font-family: 'PT Mono', monospace;
     font-size: 20px;

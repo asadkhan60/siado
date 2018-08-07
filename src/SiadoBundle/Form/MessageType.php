@@ -52,7 +52,7 @@ class MessageType extends AbstractType
                 'required' => true,
                 'mapped' => true,
                 'choices'  => array(
-                    'Tout services' => "Siado Services",
+                    'Tout' => "Siado Services",
                     'Service Ménage' => "Service Ménage",
                     'Service Garde Enfants' => "Siado Garde Enfants",
                     'Service Aides Mobilité' => "Siado Aides Mobilité",
