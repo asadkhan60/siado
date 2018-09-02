@@ -45,8 +45,20 @@
                         <span>Utiliser les produits ménagers recommandés par le client</span>
                     </li>
                 </ul>
+
+                <button class="btn-devis menage-bg">Demande de devis</button>
             </div>
         </section>
     </div>
 
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/accueil.js') }}"></script>
+
+    <script type="text/javascript">
+        var form = $('form.messageform');
+        var select = $(form).find('.messageform-objet');
+        var option =$(select).find("option[value='Service Ménage']").attr('selected','selected');
+    </script>
 {% endblock %}

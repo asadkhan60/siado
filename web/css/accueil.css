@@ -200,6 +200,23 @@
     background-color: rgb(23, 162, 184);
 }
 
+
+.btn-devis {
+    margin: 50px auto;
+    display: block;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+    border: 0;
+}
+
+.btn-devis:hover {
+    opacity: 0.8;
+}
+
+
 .main-image{
     width: 100%;
     height: 850px;
@@ -286,7 +303,7 @@
 }
 
 section.service{
-    min-height: 800px;
+    min-height: 500px;
     padding: 50px 0;
 }
 

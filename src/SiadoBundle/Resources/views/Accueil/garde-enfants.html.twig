@@ -45,9 +45,20 @@
                         <span>Activités pédagogiques</span>
                     </li>
                 </ul>
+
+                <button class="btn-devis garde-enfants-bg">Demande de devis</button>
             </div>
         </section>
     </div>
 
 {% endblock %}
 
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/accueil.js') }}"></script>
+
+    <script type="text/javascript">
+        var form = $('form.messageform');
+        var select = $(form).find('.messageform-objet');
+        var option =$(select).find("option[value='Siado Garde Enfants']").attr('selected','selected');
+    </script>
+{% endblock %}
