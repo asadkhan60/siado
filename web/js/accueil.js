@@ -8,4 +8,12 @@ $(document).ready(function () {
         var heigth = width - 150;
         $('.blog-image').height(heigth);
     });
+
+
+    $(".btn-devis").click(function (ev) {
+        ev.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("footer").offset().top
+        }, 1000);
+    });
 });

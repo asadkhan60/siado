@@ -16,6 +16,7 @@
             <div class="service-title">
                 <h1 class="title">SIADO Bricolage / Jardinage</h1>
                 <hr class="separator bricolage-jardinage-sep">
+                <p class="sous-title">Une maison entretenue toute l'année</p>
             </div>
             <div class="service-description">
                 <ul class="service-description-liste">
@@ -44,7 +45,19 @@
                         <span>Grand nettoyage de printemps</span>
                     </li>
                 </ul>
+
+                <button class="btn-devis bricolage-jardinage-bg">Demande de devis</button>
             </div>
         </section>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/accueil.js') }}"></script>
+
+    <script type="text/javascript">
+        var form = $('form.messageform');
+        var select = $(form).find('.messageform-objet');
+        var option =$(select).find("option[value='Siado Bricolage / Jardinage']").attr('selected','selected');
+    </script>
 {% endblock %}

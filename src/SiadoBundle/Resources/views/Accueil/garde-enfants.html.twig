@@ -16,6 +16,7 @@
             <div class="service-title">
                 <h1 class="title">SIADO Garde Enfants</h1>
                 <hr class="separator garde-enfants-sep">
+                <p class="sous-title">La garde de vos enfants en toute tranquilité</p>
             </div>
             <div class="service-description">
                 <ul class="service-description-liste">
@@ -44,9 +45,20 @@
                         <span>Activités pédagogiques</span>
                     </li>
                 </ul>
+
+                <button class="btn-devis garde-enfants-bg">Demande de devis</button>
             </div>
         </section>
     </div>
 
 {% endblock %}
 
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/accueil.js') }}"></script>
+
+    <script type="text/javascript">
+        var form = $('form.messageform');
+        var select = $(form).find('.messageform-objet');
+        var option =$(select).find("option[value='Siado Garde Enfants']").attr('selected','selected');
+    </script>
+{% endblock %}
