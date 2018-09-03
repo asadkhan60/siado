@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
         {% block stylesheets %}{% endblock %}
     </head>
@@ -342,6 +343,9 @@
         {% block body %}{% endblock %}
 
         <footer>
+            <div class="map">
+                <img src="{{ asset('images/map.jpg') }}">
+            </div>
             <div class="container">
                 <div class="formulaire-contact">
                     <p class="formulaire-contact-titre">
@@ -353,12 +357,12 @@
                         {{ render(controller('SiadoBundle:Accueil:contactForm')) }}
                         <div class="siado-informations">
                             <p class="infos">Nos informations</p>
-                            <p class="info-logo-siado">
-                                Logo :
+                            <span class="info-logo-siado">
+                                Siado
                                 <img src="">
-                            </p>
-                            <p class="info-adresse">Adresse :</p>
-                            <p class="info-telephone">Téléphone :</p>
+                            </span>
+                            <span class="info-adresse"><i style="color: #FFFFFF" class="fas fa-map-marker-alt"></i>15 rue Guy de Maupassant, 60100 Creil</span>
+                            <span class="info-telephone"><i class="fas fa-mobile-alt"></i>07 69 42 82 75</span>
                         </div>
                     </div>
                 </div>
@@ -392,7 +396,7 @@
                         </ul>
                     </div>
                     <br>
-                    Réalisé par Asad KHAN
+                    Développé par Ashad KHAN
                 </p>
             </div>
         </footer>

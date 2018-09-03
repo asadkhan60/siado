@@ -164,6 +164,7 @@
         </div>
     </section>
 
+    {% if articles|length > 0 %}
     <section class="section actualite">
         <div class="container">
             <p class="section-titre">
@@ -171,7 +172,6 @@
                 <span class="section-sous-titre">Nos derniers articles !</span>
             </p>
 
-            {% if articles|length > 0 %}
             <div class="blog">
                 {% for article in articles %}
                     <div class="blog-content">
@@ -201,9 +201,9 @@
                     Voir tout
                 </a>
             </div>
-            {% endif %}
         </div>
     </section>
+    {% endif %}
 {% endblock body %}
 
 {% block javascripts %}
