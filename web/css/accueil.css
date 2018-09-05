@@ -166,11 +166,12 @@
 }
 
 .blog-button:hover{
-  text-decoration: none;
+  /*text-decoration: none;
     background-color: lightskyblue;
     border: 2px solid rgb(0,46,86);
     color: #000000;
-    transition-duration: 500ms;
+    transition-duration: 500ms;*/
+    opacity: 0.8;
 }
 
 .blog-image{
