@@ -131,7 +131,7 @@
                         <h4>Ménage</h4>
                         <p>Nous vous accompagnons dans vos tâches ménagères !</p>
                         <a href="{{ path('siado_menage') }}">
-                            <button class="service-btn menage-bg border-menage">Découvrir</button>
+                            <button class="service-btn menage-bg border-menage">Voir Détails</button>
                         </a>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                         <h4>Garde Enfants</h4>
                         <p>Nous prenons soins de vos enfants !</p>
                         <a href="{{ path('siado_garde_enfants') }}">
-                            <button class="service-btn garde-enfants-bg border-garde-enfants">Découvrir</button>
+                            <button class="service-btn garde-enfants-bg border-garde-enfants">Voir Détails</button>
                         </a>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                         <h4>Aides Mobilité</h4>
                         <p>Nous vous aidons à vous déplacer et à vous rendre heureux !</p>
                         <a href="{{ path('siado_aide_mobilite') }}">
-                            <button class="service-btn aides-mobilite-bg border-aides-mobilite">Découvrir</button>
+                            <button class="service-btn aides-mobilite-bg border-aides-mobilite">Voir Détails</button>
                         </a>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                         <h4>Jardinage / Bricolage</h4>
                         <p>Nous intervenons dans l'entretien de votre jardin mais aussi pour des travaux maison de rénovation !</p>
                         <a href="{{ path('siado_jardinage_bricolage') }}">
-                            <button class="service-btn bricolage-jardinage-bg border-jardinage-bricolage">Découvrir</button>
+                            <button class="service-btn bricolage-jardinage-bg border-jardinage-bricolage">Voir Détails</button>
                         </a>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                         <h4>Soutien Scolaire</h4>
                         <p>Nous accompagnons vos enfants dans la réussite scolaire !</p>
                         <a href="{{ path('siado_aide_devoirs') }}">
-                            <button class="service-btn soutien-scolaire-bg border-soutien-scolaire">Découvrir</button>
+                            <button class="service-btn soutien-scolaire-bg border-soutien-scolaire">Voir Détails</button>
                         </a>
                     </div>
                 </div>
@@ -179,11 +179,20 @@
         </div>
     </section>
 
+    <section class="section fonctionnement">
+        <div class="container">
+            <p class="section-titre">
+                SIADO Fonctionnement
+                <span class="section-sous-titre">Simple et rapide !</span>
+            </p>
+        </div>
+    </section>
+
     {% if articles|length > 0 %}
     <section class="section actualite">
         <div class="container">
             <p class="section-titre">
-                Actualité
+                SIADO Actualité
                 <span class="section-sous-titre">Nos derniers articles !</span>
             </p>
 

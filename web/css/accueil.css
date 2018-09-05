@@ -8,6 +8,11 @@
     overflow: auto;
 }
 
+.fonctionnement{
+    background-color: #eaefe8;
+    overflow: auto;
+}
+
 .section-titre{
     margin: 30px 0 30px 0;
     text-align: center;
