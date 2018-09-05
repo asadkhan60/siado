@@ -96,7 +96,7 @@ $(document).ready(function() {
     $(".slider-bouton .bouton").click(function (ev) {
         ev.preventDefault();
         $('html, body').animate({
-            scrollTop: $("footer").offset().top
+            scrollTop: $("footer .formulaire-contact").offset().top
         }, 1000);
     });
     

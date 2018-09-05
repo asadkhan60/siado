@@ -26,6 +26,7 @@
 .box{
     padding: 20px 0;
     overflow: auto;
+    text-align: center;
 }
 
 
@@ -53,6 +54,57 @@
 
 .box .col-5{
     width: 20%;
+}
+
+.round-icon{
+    width: 100%;
+}
+
+.nos-service-description h4{
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nos-service-description p{
+    text-align: justify-all;
+    height: 100px;
+}
+
+.nos-service-description .service-btn{
+    padding: 10px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nos-service-description .service-btn:hover{
+    opacity: 0.8;
+}
+
+.border-menage{
+    border: 2px solid #fcce59;
+}
+
+.border-garde-enfants{
+    border: 2px solid #f99dcb;
+}
+
+.border-aides-mobilite{
+    border: 2px solid #57de93;
+}
+
+.border-jardinage-bricolage{
+    border: 2px solid #feb051;
+}
+
+.border-soutien-scolaire{
+    border: 2px solid #64c9d9;
 }
 
 .blog{
