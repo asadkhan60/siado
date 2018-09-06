@@ -418,6 +418,31 @@ hr.soutien-scolaire-sep{
     text-align: center;
 }
 
+.service-description {
+    width: 100%;
+    display: table;
+}
+
+.service-taches-liste{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+ }
+
+.service-taches-image{
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+
+.service-taches-image p{
+    text-align: center;
+}
+
+.service-taches-image img{
+    height: 300px;
+}
+
 .service-description-liste-li{
     list-style: none;
     margin: 10px 0;
