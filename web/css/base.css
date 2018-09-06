@@ -232,6 +232,15 @@ ul, h1, h2, h3, h4, h5, h6, p{
  text-decoration: none;
 }
 
+.parallax {
+ min-height: 250px;
+ background: linear-gradient(rgba(97, 94, 93, 0.45), rgba(97, 94, 93, 0.9));
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
 
 footer{
  margin: 0;
