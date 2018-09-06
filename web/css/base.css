@@ -27,6 +27,7 @@ ul, h1, h2, h3, h4, h5, h6, p{
 }
 
 .menu-top{
+ position: relative;
  padding: 10px;
  background-color: white;
  color: black;
@@ -34,7 +35,8 @@ ul, h1, h2, h3, h4, h5, h6, p{
 }
 
 .menu-top .logo{
- float: left;
+ position: absolute;
+ top: 3px;
 }
 
 .menu-top .menu-top-liste{
@@ -66,9 +68,16 @@ ul, h1, h2, h3, h4, h5, h6, p{
 }
 
 .menu-principal{
+ position: relative;
  height: auto;
  background: url("../images/site/menu-fond.png") repeat;
  min-height: 92px;
+}
+
+.menu-principal .logo {
+ display: none;
+ position: absolute;
+ top: 12px;
 }
 
 .menu-principal .menu-principal-liste{

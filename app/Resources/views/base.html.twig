@@ -26,11 +26,9 @@
                 <div class="menu-top">
                     <div class="container">
                         <div class="logo">
-                            <h1>
-                                <a class="logo-siado" href="{{ path('siado_accueil') }}">
-                                    SIADO
-                                </a>
-                            </h1>
+                            <a class="logo-siado" href="{{ path('siado_accueil') }}">
+                                <img src="{{ asset('images/logo-siado3.png') }}"/>
+                            </a>
                         </div>
                         <ul class="menu-top-liste">
                             <li>
@@ -54,6 +52,11 @@
 
                 <div class="menu-principal">
                     <div class="container">
+                        <div class="logo">
+                            <a class="logo-siado" href="{{ path('siado_accueil') }}">
+                                <img src="{{ asset('images/logo-siado-text.png') }}"/>
+                            </a>
+                        </div>
                         <ul class="menu-principal-liste">
                             <li class="menu-liste-li" style="border-bottom: 5px solid cornflowerblue">
                                 <a href="{{ path('siado_accueil') }}">
@@ -366,8 +369,7 @@
                         <div class="siado-informations">
                             <p class="infos">Nos informations</p>
                             <span class="info-logo-siado">
-                                Siado
-                                <img src="">
+                                <img src="{{ asset('images/logo-siado-white.png') }}">
                             </span>
                             <span class="info-adresse"><i style="color: #FFFFFF" class="fas fa-map-marker-alt"></i>15 rue Guy de Maupassant, 60100 Creil</span>
                             <span class="info-telephone"><i class="fas fa-mobile-alt"></i>07 69 42 82 75</span>

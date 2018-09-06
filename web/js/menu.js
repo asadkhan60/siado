@@ -32,7 +32,7 @@ $(document).ready(function () {
         }
     }
 
-    initialisationSousMenu();
+    //initialisationSousMenu();
 
 
     $(this).scroll(function() {
@@ -42,10 +42,22 @@ $(document).ready(function () {
                     display: $(this).scrollTop() < 100 ? "block":"none"
                 }
             );
+
+            $(".menu-principal .logo").css(
+                {
+                    display: $(this).scrollTop() < 100 ? "none":"block"
+                }
+            );
         }else{
             $(".menu-top").css(
                 {
                     display: "block"
+                }
+            );
+
+            $(".menu-principal .logo").css(
+                {
+                    display: "none"
                 }
             );
         }
