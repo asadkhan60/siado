@@ -295,7 +295,6 @@
     width: 30%;
     margin: 0 auto;
     padding: 10px;
-    cursor: pointer;
     text-transform: uppercase;
 }
 
@@ -303,7 +302,6 @@
     width: 30%;
     margin: 0 auto;
     padding: 10px;
-    cursor: pointer;
     opacity: 1;
 }
 
