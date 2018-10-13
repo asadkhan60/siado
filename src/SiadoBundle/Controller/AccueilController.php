@@ -20,7 +20,6 @@ class AccueilController extends Controller
         ));
     }
 
-
     public function menageAction()
     {
         return $this->render('@Siado/Accueil/menage.html.twig');

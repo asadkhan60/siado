@@ -8,7 +8,7 @@
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="{{ path('admin_article_liste') }}">Articles</a>
+                    <a href="{{ path('admin') }}">Articles</a>
                 </li>
                 <li class="breadcrumb-item active">Mes Articles</li>
             </ol>
@@ -101,7 +101,7 @@
                                         alert(response);
                                     },
                                     success: function () {
-                                        window.location.href = "{{ path('admin_article_liste') }}";
+                                        window.location.href = "{{ path('admin') }}";
                                     }
                                 }
                             );

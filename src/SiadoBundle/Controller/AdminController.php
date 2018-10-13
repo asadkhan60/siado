@@ -11,11 +11,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AdminController extends Controller
 {
-    public function indexAction()
-    {
-        return $this->render('@Siado/Admin/admin.html.twig');
-    }
-
     /* Articles */
 
     public function articlesListAction()
@@ -36,7 +31,7 @@ class AdminController extends Controller
         $article = $rep->find($id);
 
         if(null === $article)
-            $this->redirectToRoute('admin_article_liste');
+            $this->redirectToRoute('admin');
 
         return $this->render('@Siado/Admin/articles/article-show.html.twig', array(
             'article' => $article
@@ -73,7 +68,7 @@ class AdminController extends Controller
             $em->persist($article);
             $em->flush();
 
-            return $this->redirectToRoute('admin_article_liste');
+            return $this->redirectToRoute('admin');
         }
 
         return $this->render('@Siado/Admin/articles/article-add.html.twig', array(
@@ -88,7 +83,7 @@ class AdminController extends Controller
         $article = $em->getRepository('SiadoBundle:Article')->find($id);
 
         if(null === $article)
-            $this->redirectToRoute('admin_article_liste');
+            $this->redirectToRoute('admin');
 
         $current_image = $article->getImage()->getFile();
 
@@ -108,7 +103,7 @@ class AdminController extends Controller
             $em->persist($article);
             $em->flush();
 
-            return $this->redirectToRoute('admin_article_liste');
+            return $this->redirectToRoute('admin');
         }
 
         return $this->render('@Siado/Admin/articles/article-edit.html.twig', array(

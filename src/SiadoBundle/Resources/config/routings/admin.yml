@@ -1,11 +1,11 @@
 admin:
     path: /admin/
-    defaults: { _controller: SiadoBundle:Admin:index }
-
-
-admin_article_liste:
-    path: /admin/article-list
     defaults: { _controller: SiadoBundle:Admin:articlesList }
+
+
+#admin_article_liste:
+#    path: /admin/article-list
+#    defaults: { _controller: SiadoBundle:Admin:articlesList }
 
 admin_article_add:
     path: /admin/article-add

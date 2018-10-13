@@ -6,7 +6,7 @@
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="{{ path('admin_article_liste') }}">Retour</a>
+                    <a href="{{ path('admin') }}">Retour</a>
                 </li>
                 <li class="breadcrumb-item active">{{ article.titre }}</li>
             </ol>
@@ -87,7 +87,7 @@
                                         alert("Une erreur s'est produite lors de la suppression de l'article. Veuillez contacter le technicien informatique !")
                                     },
                                     success: function () {
-                                        window.location.href = "{{ path('admin_article_liste') }}";
+                                        window.location.href = "{{ path('admin') }}";
                                     }
                                 }
                             );
