@@ -23,7 +23,7 @@ class Message
     private $objet;
 
     /**
-     * @var text
+     * @var string
      */
     private $message;
 
@@ -89,7 +89,7 @@ class Message
     /**
      * Set message
      *
-     * @param text $message
+     * @param string $message
      *
      * @return Message
      */
@@ -103,7 +103,7 @@ class Message
     /**
      * Get message
      *
-     * @return text
+     * @return string
      */
     public function getMessage()
     {
@@ -146,11 +146,6 @@ class Message
     /**
      * @var string
      */
-    private $prenom;
-
-    /**
-     * @var string
-     */
     private $telephone;
 
 
@@ -176,30 +171,6 @@ class Message
     public function getNom()
     {
         return $this->nom;
-    }
-
-    /**
-     * Set prenom
-     *
-     * @param string $prenom
-     *
-     * @return Message
-     */
-    public function setPrenom($prenom)
-    {
-        $this->prenom = $prenom;
-
-        return $this;
-    }
-
-    /**
-     * Get prenom
-     *
-     * @return string
-     */
-    public function getPrenom()
-    {
-        return $this->prenom;
     }
 
     /**

@@ -128,6 +128,7 @@ class AccueilController extends Controller
 
             $message->setStatus(0);
             $message->setDateMessage(new \DateTime('now'));
+            //$message->setMessage(htmlspecialchars($message->getMessage()));
 
             /*$msg = (new \Swift_Message($message->getObjet()))
                 ->setFrom($message->getEmail())

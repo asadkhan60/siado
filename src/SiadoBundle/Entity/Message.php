@@ -23,7 +23,7 @@ class Message
     private $objet;
 
     /**
-     * @var text
+     * @var string
      */
     private $message;
 
@@ -89,7 +89,7 @@ class Message
     /**
      * Set message
      *
-     * @param text $message
+     * @param string $message
      *
      * @return Message
      */
@@ -103,7 +103,7 @@ class Message
     /**
      * Get message
      *
-     * @return text
+     * @return string
      */
     public function getMessage()
     {
