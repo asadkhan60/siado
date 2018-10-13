@@ -40,11 +40,17 @@
                                 </td>
                             </tr>
                         </table><!--/600px container -->
-
-
                     </td>
                 </tr>
             </table><!--/100% background wrapper-->
+
+            <div class="message_button">
+                <div class="row">
+                    <div  style="display: block; margin: 30px auto">
+                        <a href="mailto:{{ message.email }}?subject={{ message.objet }}"><button class="btn btn-info link-cursor">Repondre</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
